@@ -2,6 +2,7 @@
   "name": "agency",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -16,6 +17,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "sass": "^1.49.7",
+    "showdown": "^2.0.0-alpha",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
