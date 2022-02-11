@@ -22,7 +22,7 @@ export function App() {
       <ThemeProvider theme={Theme}>
         <Router>            
           <Navbar/>
-          <Box sx={{width: '100%', height: '92vh', backgroundColor: "background.paper"} }>
+          <Box sx={{width: '100%', minHeight: '93vh', backgroundColor: "background.paper"} }>
             <Routes>
               <Route path={'/'} element={<Home />} />
               <Route path={'/about'} element={<About />} />

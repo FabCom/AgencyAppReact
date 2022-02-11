@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import {Box, Container, Fade} from "@mui/material"
 import { PageTitle } from "../../components/titles/PageTitle";
+import PageContent from '../../datas/pages/About.txt'
+import { convertMarkdown } from "../../components/utils";
 
-const About = (props) => {
+const Home = (props) => {
+
+  const [content, setContent] = useState();
+
+  useEffect(() => {
+    fetch(PageContent)
+    .then(response => response.text())
+    .then(data => setContent(data)) //
+  },[])
+
     return (
-       <div className="-view">
-          <PageTitle title="À propos"/>
-
-       </div>
+      <Box>
+       <PageTitle title='À propos'/>
+       <Container>
+        <Fade in={true}>
+        <Box color="text.primary" dangerouslySetInnerHTML={convertMarkdown(content)} />
+        
+        </Fade>
+        
+      </Container>
+      </Box>
     );
 }
 
-export default About;
+export default Home;

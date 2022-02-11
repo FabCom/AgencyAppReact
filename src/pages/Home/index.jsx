@@ -19,7 +19,7 @@ const Home = (props) => {
        <PageTitle title='Accueil'/>
        <Container>
         <Fade in={true}>
-        <Box dangerouslySetInnerHTML={convertMarkdown(content)} />
+        <Box color="text.primary" dangerouslySetInnerHTML={convertMarkdown(content)} />
         
         </Fade>
         

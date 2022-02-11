@@ -9,7 +9,7 @@ import { ThemeContextProvider } from "./ThemeContext.jsx";
 ReactDOM.render(
   <React.StrictMode>      
     <ThemeContextProvider>
-      <App />      
+      <App sx={{backgroundColor: "background.paper"}}/>      
     </ThemeContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

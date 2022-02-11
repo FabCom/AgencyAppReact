@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 export const Navbar = (props) => {
 
-    const items = [{id: 1, path:'/', text:'Bienvenue'}, {id:2, path:'works/list', text:"Travaux"}, {id:3, path:'/about',text:"À propos"}]
+    const items = [{id: 1, path:'/', text:'Bienvenue'}, {id:2, path:'/works/list', text:"Travaux"}, {id:3, path:'/about',text:"À propos"}]
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
