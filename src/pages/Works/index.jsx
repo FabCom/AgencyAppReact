@@ -33,6 +33,7 @@ export const Works = (props) => {
   } else {
     return (
       <Container>
+        <PageTitle title="Travaux"/>
         <WorkView title={search.get('title')}/>
       </Container>
     )

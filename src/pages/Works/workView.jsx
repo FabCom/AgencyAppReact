@@ -15,7 +15,6 @@ const WorkView = (props) => {
       <Box>
         <CustomizedTimeline events={events} />
       </Box>  
-     
     )
   } else {
     let events_selected = events.filter((event) => event.title === title)
@@ -23,7 +22,7 @@ const WorkView = (props) => {
       <Box>
         <CustomizedTimeline events={events_selected} />
         <Box color="text.primary" dangerouslySetInnerHTML={convertMarkdown(events_selected[0].text)} />
-          
+       
       </Box>  
      
     )
